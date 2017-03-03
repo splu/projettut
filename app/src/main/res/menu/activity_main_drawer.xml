@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Accueil"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Accueil" />
+        <item
+            android:id="@+id/nav_Concours"
+            android:icon="@drawable/ic_brightness_high_black_24dp"
+            android:title="Concours" />
+        <item
+            android:id="@+id/nav_equipes"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Les équipes" />
+        <item
+            android:id="@+id/nav_live"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Live" />
+        <item
+            android:id="@+id/nav_animationsetdefis"
+            android:icon="@drawable/ic_toys_black_24dp"
+            android:title="Animations et defis" />
+        <item
+            android:id="@+id/nav_defis"
+            android:icon="@drawable/ic_play_arrow_black_24dp"
+            android:title="Defis" />
+
+        <item
+            android:id="@+id/nav_souvenirs"
+            android:icon="@drawable/ic_souvenirs"
+            android:title="Souvenirs" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Partager"
+                app:showAsAction="always"/>
+        </menu>
+    </item>
+
+</menu>
