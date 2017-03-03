@@ -29,8 +29,8 @@ public class LiveFragment extends Fragment{
         return myView;
     }
 
-    // Fonction click sur sur bouton equipe
-    // public void actionEquipe(Context context) {
-    //    new EquipeAsyncTask(context, mainListView).execute();
-    //}
+    // Fonction click sur sur bouton classement
+    public void actionLive(Context context) {
+        new LiveAsyncTask(context, mainListView).execute();
+    }
 }

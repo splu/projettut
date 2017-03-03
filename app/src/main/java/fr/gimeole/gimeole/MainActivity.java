@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity
     // Fonction click sur sur bouton equipe
     public void actionEquipe(View view) {
         android.app.FragmentManager fm = getFragmentManager();
-        Fragment currentFragment = fm.findFragmentByTag("FragmentEquipe");
+        Fragment currentFragment = fm.findFragmentByTag("EquipeFragment");
         ((EquipesFragment)currentFragment).actionEquipe(this);
         //new EquipeAsyncTask(this).execute();
     }
@@ -85,8 +85,8 @@ public class MainActivity extends AppCompatActivity
     // Fonction click sur sur bouton live (classement général)
     public void actionLive(View view) {
         android.app.FragmentManager fm = getFragmentManager();
-        Fragment currentFragment = fm.findFragmentByTag("FragmentLive");
-        ((EquipesFragment)currentFragment).actionEquipe(this);
+        Fragment currentFragment = fm.findFragmentByTag("LiveFragment");
+        ((LiveFragment)currentFragment).actionLive(this);
         //new EquipeAsyncTask(this).execute();
     }
 
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_equipes) {
             fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame, new EquipesFragment(), "FragmentEquipe").commit();
+                    .replace(R.id.content_frame, new EquipesFragment(), "EquipeFragment").commit();
 
         } else if (id == R.id.nav_defis) {
             fragmentManager.beginTransaction()
@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_live) {
             fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame, new LiveFragment()).commit();
+                    .replace(R.id.content_frame, new LiveFragment(), "LiveFragment").commit();
 
         } else if (id == R.id.nav_animationsetdefis) {
             fragmentManager.beginTransaction()
