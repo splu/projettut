@@ -9,7 +9,7 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:text="Live"
+        android:text="Classement général //L"
         android:textSize="35dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,21 +19,11 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="Performance éolienne"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button4"
-        android:layout_marginBottom="87dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:text="Classement général"
+        android:text="2017"
         android:onClick="actionLive"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -45,6 +35,16 @@
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"></ListView>
+
+    <Button
+        android:text="2016"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_below="@+id/liveListView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
 
     </ScrollView>

@@ -167,6 +167,10 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame, new LiveFragment(), "LiveFragment").commit();
 
+        } else if (id == R.id.nav_live2) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame, new Live2Fragment(), "Live2Fragment").commit();
+
         } else if (id == R.id.nav_animationsetdefis) {
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame, new AnimationsetdefisFragment()).commit();
@@ -175,6 +179,9 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame, new SouvenirsFragment()).commit();
 
+        } else if (id == R.id.nav_videos) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame, new VideosFragment()).commit();
 
         } else if (id == R.id.nav_share) {
 

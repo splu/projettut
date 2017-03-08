@@ -42,7 +42,7 @@ public class EquipeAsyncTask extends AsyncTask {
         try { //TRY on essaye le bloc
             // String username = (String) arg0[0]; //sort username des arguments
             // String password = (String) arg0[1]; //sort password des arguments
-            String link = "http://mysqlgimeole.gimeole.fr/script_php_gimeole/requetes_php.php";
+            String link = "http://mysqlgimeole.gimeole.fr/script_php_gimeole/requetes_php_TABLE_CLASSEMENT.php";
             //liens ? paramètres
             //URL url = new URL("http://mysqlgimeole.gimeole.fr/"); //déclaration url avec le lien
             DefaultHttpClient client = new DefaultHttpClient();

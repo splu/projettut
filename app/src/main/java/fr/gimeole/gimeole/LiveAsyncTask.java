@@ -93,7 +93,7 @@ public class LiveAsyncTask extends AsyncTask {
 
                 //planetList.add(jsonObject.getString("Nom_equipe"));
                 //planetList.add(jsonObject.getString("performance"));
-                String liveString = jsonObject.getString("Nom_equipe") + " : " + jsonObject.getString("performance");
+                String liveString = jsonObject.getString("Nom_equipe") + " : " + jsonObject.getString("performance") + " % ";
                 planetList.add(liveString);
             }
 
